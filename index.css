@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1000px;
+}
+
+div.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto auto;
+  gap: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.large-image-card,
+.brown-card,
+.green-card {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.large-image-card {
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 2;
+  width: 100%;
+  height: auto;
+  background-image: url(./img/hand-with-plants.jpg);
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brown-card {
+  grid-column: 4 / span 3;
+  grid-row: 1;
+  height: 50%;
+}
+
+.green-card {
+  grid-column: 4 / span 3;
+  grid-row: 2;
+  height: 50%;
+}
+
+.large-image {
+  align-self: center;
+}
+.small-image {
+  width: 100%;
+  max-height: 16vw;
+  height: auto;
+  align-self: start;
+}
+
+.brown {
+  background-color: #9e6d52;
+}
+.green {
+  background-color: #0a846e;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0px 4px 4px 0px rgba(3, 56, 47, 0.11);
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family: 'Maven Pro', sans-serif;
+  color: #055647;
+}
+
+/* circle */
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: rgba(10, 132, 110, 1);
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 3rem;
+}
+
+.rounded-image-with-text-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+}
+
+.rounded-image-with-illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(10, 132, 110, 1);
+  margin: auto;
+  border-radius: 50%;
+  width: 22rem;
+  height: 22rem;
+}
+
+.rounded-image-with-text-text {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: 700;
+}
+
+.rounded-image-with-text-text p {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 1rem;
+}
+
+.green-button {
+  max-width: max-content;
+  padding: 0.8rem 1.5rem;
+  align-self: flex-end;
+  margin-top: 1rem;
+  border: none;
+  background: rgba(10, 132, 110, 1);
+  color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px #888888;
+}
+
+/* Centered Border */
+.centered-border {
+  width: 20rem;
+  margin: 0 auto;
+  border-bottom: 3px solid rgba(5, 86, 71, 1);
+  display: block;
+  margin-top: 5rem;
+}
+
+/* cards */
+
+.planerade-planteringar-rubrik {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  margin: 4rem 0 2rem 0;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.card-grid {
+  display: grid;
+  padding: 0 2.6rem;
+  max-width: 1000px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  grid-column: span 2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  height: 25.4rem;
+
+}
+
+.card-image {
+  width: 100%;
+  height: 46vh;
+  object-fit: cover;
+  flex-grow: 1;
+}
+
+.figcaption-text {
+  padding: 0.6rem;
+  flex-grow: 0;
+}
+
+.card-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.date,
+.name,
+.type,
+.red-button {
+  margin: 0;
+  display: flex;
+  align-items: end;
+}
+
+.red-button {
+  padding: 0.4rem 0.8rem;
+  background: rgba(185, 56, 87, 1);
+  border-radius: 0.6rem;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+.type {
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.date {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.name {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.show-more-button {
+  padding: 1rem 1.6rem;
+  background: rgba(10, 132, 110, 1);
+  border-radius: 0.6rem;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-family: 'Open Sans', Arial, sans-serif;
+  display: block;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.green-planted-plant-button {
+  background: rgba(10, 132, 110, 1);
+  border-radius: 0.6rem;
+  padding: 1rem 0.8rem;
+  border: none;
+  color: white;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  max-width: max-content;
+  padding: 0.8rem 1.5rem;
+  align-self: flex-start;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* styles.css */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Adjust to place the bottom text container at the bottom */
+  align-items: center;
+  background-image: url('./img/plocka-plantor.avif');
+  background-position: center center;
+  background-size: cover;
+  margin-top: 5rem;
+  height: 100vh; /* Keep the footer height as is */
+  position: relative; /* Ensure the footer height remains consistent */
+  padding-bottom: 2rem; 
+}
+
+.footer-image {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  align-items: center;
+  /* position: relative; */
+  width: 100%;
+  height: calc(50vw + 2rem); /* Example height for the image container */
+/*   overflow: hidden; */
+  /* margin: 0; */
+}
+
+.footer-logo {
+  grid-column: 2; /* Place in the second column */
+  justify-self: center; /* Center horizontally */
+  align-self: center; /* Center vertically */
+  max-width: 50%; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 1; /* Ensure the logo is above the overlay */
+}
+
+.footer-image::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%; 
+  background-color: rgba(0, 0, 0, 0.8); 
+  z-index: 0;
+}
+
+.overlay-content {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  z-index: 1; 
+  color: white; 
+  padding: 10px;
+}
+
+.vi-hors-text {
+  color: white;
+  font-size: 4rem;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 500;
+}
+
+.bottom-text-container {
+  background-color: white;
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+ /*  padding-bottom: 1rem; 
+  padding-top: 1rem; */ /* Adjust as needed for spacing */
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.8);
+  margin: 0;
+}
+
+.bottom-text {
+/*   margin: 0; */ /* Remove default margin */
+}
